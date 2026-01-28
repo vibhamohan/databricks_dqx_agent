@@ -5,6 +5,7 @@
 [![Databricks](https://img.shields.io/badge/Databricks-Apps-FF3621.svg)](https://docs.databricks.com/dev-tools/databricks-apps/index.html)
 [![DQX](https://img.shields.io/badge/DQX-Data%20Quality-green.svg)](https://databrickslabs.github.io/dqx/)
 [![CI/CD Dev](https://github.com/dediggibyte/databricks_dqx_agent/actions/workflows/ci-cd-dev.yml/badge.svg)](https://github.com/dediggibyte/databricks_dqx_agent/actions/workflows/ci-cd-dev.yml)
+[![codecov](https://codecov.io/github/dediggibyte/databricks_dqx_agent/graph/badge.svg)](https://codecov.io/github/dediggibyte/databricks_dqx_agent)
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://dediggibyte.github.io/databricks_dqx_agent/)
 
 **AI-powered data quality rule generation and validation for Databricks**
