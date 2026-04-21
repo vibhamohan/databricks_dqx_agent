@@ -60,8 +60,12 @@ The generated rules use DQX's built-in check functions. See [DQX Quality Checks 
 | `has_y_coordinate_between` | Y coordinates within range |
 | `is_area_not_less_than` | Geometry area meets minimum |
 | `is_area_not_greater_than` | Geometry area respects maximum |
+| `is_area_equal_to` | Geometry area matches target value |
+| `is_area_not_equal_to` | Geometry area differs from target value |
 | `is_num_points_not_less_than` | Coordinate count meets minimum |
 | `is_num_points_not_greater_than` | Coordinate count respects maximum |
+| `is_num_points_equal_to` | Coordinate count matches target |
+| `is_num_points_not_equal_to` | Coordinate count differs from target |
 
 ## Dataset-Level Checks
 

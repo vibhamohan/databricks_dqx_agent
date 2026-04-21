@@ -81,8 +81,10 @@ exclude_lines = [
     "def __repr__",
     "raise NotImplementedError",
     "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
 ]
 show_missing = true
+fail_under = 80
 
 [tool.flake8]
 max-line-length = 120
