@@ -5,4 +5,10 @@
 
 command: ["gunicorn", "--bind", "0.0.0.0:$DATABRICKS_APP_PORT", "--workers", "2", "--timeout", "300", "wsgi:app"]
 
-env: ["SQL_WAREHOUSE_ID","ffb56411b8946b4e","DQ_GENERATION_JOB_ID","841968996433607","DQ_VALIDATION_JOB_ID","71777656292289"]
+env:
+  - name: SQL_WAREHOUSE_ID
+    value: "ffb56411b8946b4e"                      # Set in Databricks App UI → Environment variables
+  - name: DQ_GENERATION_JOB_ID
+    value: "841968996433607"   #"mas-7a439e1c-endpoint"                      # Your supervisor agent endpoint name
+  - name: DQ_VALIDATION_JOB_ID
+    value: "71777656292289"                      # OAuth public client ID from Account Console
