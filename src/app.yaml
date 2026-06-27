@@ -3,16 +3,6 @@
 # This file configures the app runtime settings
 # Environment-specific values (job IDs, Lakebase, etc.) are injected during CI/CD deployment
 
-command:
-  - gunicorn
-  - --bind
-  - 0.0.0.0:8000
-  - --workers
-  - "2"
-  - --timeout
-  - "300"
-  - wsgi:app
-
-command: ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "300","wsgi:app"]
+command: ["gunicorn", "--bind", "0.0.0.0:$DATABRICKS_APP_PORT", "--workers", "2", "--timeout", "300", "wsgi:app"]
 
 env: []
