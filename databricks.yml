@@ -58,7 +58,7 @@ variables:
     description: "Path to the DQ rule validation notebook"
   sql_warehouse_id:
     description: "SQL Warehouse ID for app to execute queries"
-    default: " ffb56411b8946b4e"  # Overridden by CI/CD --var flag
+    default: "ffb56411b8946b4e"  # Overridden by CI/CD --var flag
 
 # Include modular configuration files
 include:
